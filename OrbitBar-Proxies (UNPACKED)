@@ -1,0 +1,37 @@
+Hardware-Powered Luau Proxies
+High-speed middleware for external API communication and Admin logging.
+This module acts as a secure bridge between your Roblox game servers and external web services. It is optimized to handle high-frequency requests (like chat logs or rank updates) without triggering 429 rate limits or bottlenecking your server’s performance.
+
+# ---WHAT-TO-EXPECT---
+1. These are currently in beta-mode.
+2. V3 Is lately arriving with a bunch of new of these features.
+3. Final, proxy modules are included to insert with the OrbitBar Graphic-User-Interface Script.
+
+Module.la Proxies example:
+
+local Proxy = require(game.ServerStorage.ProxyHandler)
+
+-- Sending a standard log to your external registry
+Proxy.Post({
+    Url = "https://your-github-proxy.com/api/logs",
+    Headers = { ["Authorization"] = "Bearer DI_TEAM_KEY" },
+    Body = {
+        User = "YourUsernameHere",
+        Action = "RankUpdate",
+        NewRank = "Owner",
+        XP = 650000
+    }
+})
+
+Another example to help:
+
+local RegistryProxy = require(game.ServerStorage.RegistryProxy)
+
+-- Fetch the latest rank data from GitHub
+local Success, Data = RegistryProxy.FetchRegistry("MainBranch")
+
+if Success then
+    print(" Admin Request Requirement: " .. Data.Ranks.Mod)
+end
+
+This will usually be included with some versions, powered soonly by Hardware Tools.
