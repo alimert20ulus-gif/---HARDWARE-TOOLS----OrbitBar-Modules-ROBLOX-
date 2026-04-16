@@ -7,6 +7,6 @@ We usually power stuff more beyond - a high-end gaming Proxy Pallete for devs to
 
 Utility Admin Ready: Fully compatible with HighEnd-Admin systems for rank-based permissions and remote logging.
 
-Luau & C# Support: Optimized for both Roblox (Open Cloud) and Unity-based environments.
+Luau & Lua Support: Optimized for both Roblox (Open Cloud) and Unity-based environments.
 
 Performance Monitoring: Real-time metrics for CPU/GPU overhead to ensure zero-lag execution.
