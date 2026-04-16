@@ -1,0 +1,20 @@
+Basic Usages against this same theme:
+
+local OrbitPalette = require(game:GetService("ReplicatedStorage").OrbitBarPalette)
+
+-- Set the theme to a custom palette
+OrbitPalette.SetTheme("DeepHardware")
+
+-- Apply to a UI element
+local MainFrame = script.Parent.Frame
+MainFrame.BackgroundColor3 = OrbitPalette.GetColor("Primary")
+
+Another Example to load and fire Themed Triggers:
+
+-- Automatically switch colors based on user rank
+if Player.XP >= 650000 then
+    OrbitPalette.SetTheme("Gold")
+end
+
+# ---NOTICE---
+These are only currently Beta Scripts, they dont work for now.
